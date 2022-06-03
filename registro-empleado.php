@@ -34,7 +34,7 @@
     </header>
 
     <div class="empleados">
-        <form action="registrar.php" name="registroempleado" method="POST" class="formulario" id="form-empleado">
+        <form action="server/registrar.php" name="registroempleado" method="POST" class="formulario" id="form-empleado">
         <div class="usuario">
             <h1>bienvenido empleado</h1>
             <h2>ingrese sus datos personales</h2>
@@ -95,17 +95,15 @@
 
         </div> 
         </form>
-        <?php
 
-include("server/registrar.php");
-
-
-
-?>
     </div>
     
     
+    <?php
 
+include("server/registrar.php");
+
+?>
 <script src="js/validaregempleado.js"></script>
 </body>
 
