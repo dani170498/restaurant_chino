@@ -1,0 +1,559 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/*esta es la fuente del body */
+body{
+    background-color: #fff;
+    font-weight: bold;
+    padding: 90 px 20px 0;
+    
+}
+/*color y tamaño de la barra de navegacion*/
+header{
+    position: fixed;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);    
+    height: 100px;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 100px;
+    margin: 0;
+    font-family: 'lobster two', cursive;
+    text-transform: capitalize;
+    position: fixed;
+}
+
+.nav-link{
+    color: #fff;
+    text-decoration:solid;
+} 
+
+.nav-menu{
+    display: flex;
+    margin-right: 80px;
+    list-style: none;
+}
+
+.nav-menu-item{
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 60px;
+    width: max-content;
+}
+
+.nav-menu-link{
+padding: 50px 12px;
+border-radius: 3px;
+}
+
+
+.nav-menu-link:hover{
+    background-color:rgb(194, 94, 57) ;
+    opacity: 0.6;
+    transition: 1s;
+}
+
+.nav-toggle{
+    color:black;
+    background:none;
+    border:none;
+    font-size: 40px;
+    padding: 0 30px;
+    line-height:60px;
+    display: none;
+}
+/*  BOTONES NAVEGACION*/
+.nav-login{
+    display: flex;
+    list-style: none;
+}
+.nav-login-link{
+    padding: 50px 12px;
+    border-radius: 3px;
+    text-transform: capitalize;
+    }
+.nav-login-link:hover{
+    background-color: #086056;
+    opacity: 0.4;
+    transition: 1s;
+}
+.nav-toggle{
+    color:#fff;
+    background:none;
+    border:none;
+    font-size: 40px;
+    padding: 0 30px;
+    line-height:60px;
+    display: none;
+}
+/* cuerpo de la pagina*/
+.general{
+    margin: auto;
+    width: 960px;
+    height: 800px;
+
+}
+#arriba{
+    background-color: #00DBDE;
+    background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);    
+    text-align: center;
+    font-family: 'lobster two', cursive;
+    border: none;
+
+}
+
+h1{
+    font-size: 50px;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+.catalogo{
+    display: inline-flex;
+    width: 200px;
+    height: 50px;
+    font-family: 'lobster two', cursive;
+    font-size: 23px;
+    text-align: center;
+    justify-content: center;
+    text-transform: capitalize;
+    transition: 1s ease all;
+    border-radius:6px;
+    background-color: #cc040e;
+    color: rgb(43, 175, 175);
+}
+
+.catalogo:hover{
+background-color: #13130c;
+
+}
+
+#pedircomida{
+    text-align: center;
+    font-family: 'lobster two', cursive;
+    border: none;
+    background-color: #00DBDE;
+    background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+    
+}
+
+h2{
+    font-size: 50px;
+    text-transform: capitalize;
+    color: #fff; 
+}
+
+.pedircomida{
+    display: inline-flex;
+    width: 200px;
+    height: 50px;
+    font-family: 'lobster two', cursive;
+    font-size: 23px;
+    text-align: center;
+    justify-content: center;
+    text-transform: capitalize;
+    transition: 1s ease all;
+    border-radius:6px;
+    background-color: #cc040e;
+    color: rgb(43, 175, 175);
+
+}
+
+.pedircomida:hover{
+    background-color: #13130c;
+    ;
+
+}
+ 
+
+
+footer{
+    text-align: center;
+    position: relative;
+    background-color: #00DBDE;
+    background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);    
+    align-self: flex-end;
+    width: 100%;
+    height: 100%;
+}
+
+
+.ctc{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color:#fff;
+    text-transform: capitalize;
+    font-size:25px;
+    font-family: 'lobster two';
+}
+.redes{
+   justify-content:space-around;
+   min-width: 500px; 
+   display: flex;
+
+}
+
+.redes a { 
+
+    text-decoration: none;
+    font-size: 50px;
+    width: 60px;
+    height: 60px;
+    background: #3c87b3;
+    color: #fff;
+    line-height: 60px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0,0,0 , 0.5);
+    transition: all 0.4s ease-in-out;
+}
+
+.redes a:hover
+{
+    transform: scale(1.3);
+}
+.rights{
+    margin-top: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family:sans-serif;
+}
+/*estilo del panel de empleado*/
+ul{
+    list-style: none;
+}
+
+.opciones__lista{
+    display:inline-block ;
+    width: 600px;
+
+
+}
+
+.panel__empleado{
+    background-color: #00DBDE;
+    background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+}
+
+
+.opciones__empleado{
+
+    
+    width:700px;
+    height: 650px;
+    margin: 150px auto;
+
+    background-color: #445eee;
+    border: 10px solid transparent ;
+    border-radius: 20px 0;
+    box-shadow: 0 0 6px 0 rgba(65, 179, 19, 1);
+
+}
+
+.opciones__titulos{
+    text-align: center;
+    font-family: 'lobster two'; 
+   font-size: 40px;
+
+}
+
+.opciones__container-elementos{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+    text-align: center;
+    font-size: 15px;
+    margin: 10px 15px;
+}
+
+.opciones__container-empleados{
+    width: 200px;
+    height: 150px;
+    margin-top: 30px;
+
+}
+
+.opciones__icono{
+    justify-content: center;
+    color: #000;
+    font-size: 70px;
+    background-color: #fff;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+
+}
+
+.opciones__icono:hover{
+    background-color: #cc040e;
+    transition: 0.6s;
+
+}
+
+.opciones__texto{
+    font-size: 20px;
+    font-family: 'lobster two', cursive;
+    color: #E0C3FC;
+
+}
+
+
+/*panel de usuario*/
+
+.panel__user{
+    background-color: #00DBDE;
+    background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+}
+
+.nav-icono{
+    font-size: 60px;
+
+}
+
+.nav-menu-item-sublist{
+    background-color: #000;
+
+}
+
+.opciones__user{
+    background-color: #fff;
+    width:700px;
+    height: 650px;
+    margin: 150px auto;
+    border: 10px solid transparent ;
+    border-radius: 20px 0;
+    box-shadow: 0 0 6px 0 rgba(65, 179, 19, 1);
+}
+
+.opciones__titulo-user{
+    color: #000;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'lobster two';
+
+
+}
+.opciones__container-user{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+    text-align: center;
+    font-size: 15px;
+    margin: 100px 15px;
+}
+
+.opciones__texto-usuario{
+
+    font-size: 25px;
+    font-family: 'lobster two';
+
+}
+
+/*panel de adicion de producto*/
+
+.adicionar__producto{
+
+    width:450px;
+    height: 425px;
+    margin: 150px auto;
+    background-color: #fff;
+    border: 10px solid transparent ;
+    border-radius: 20px 0;
+    box-shadow: 0 0 6px 0 rgba(65, 179, 19, 1);
+
+}
+
+.adicionar__titulo{
+
+    color: #000;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'lobster two';
+
+
+}
+
+.adicionar__container-inputs{
+    margin-top: 7px;
+    color: #000000;
+    height: 35px;
+    padding: 10 10 10 5px;
+    font-size: 18px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid var(--colorTextos);
+    transition: 0.6s ease all;
+}
+
+.adicionar__input{
+
+    margin-top: 30px;
+    color: #000000;
+    height: 35px;
+    padding: 10 10 10 5px;
+    font-size: 18px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #FC00FF;
+    transition: 0.6s ease all;
+}
+
+.adicionar__input:focus{
+    border: 3px solid #FC00FF;
+    outline: none;
+    box-shadow: 3px 0px 30px  ;
+    color: rgba(94, 93, 93, 0.6s);
+    color:#fc00ff;
+}
+
+.adicionar__boton{
+
+    background-color: #FC00FF;
+    color: #fff;
+    font-size: 20px;
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 6px 0 rgb(10, 22, 5);
+    transition: 0.6s ease all;
+    margin-top: 60px;
+}
+
+.adicionar__boton:hover{
+    background-color: #00DBDE;
+    color: #fff;
+    font-size: 20px;
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 6px 0 rgb(10, 22, 5);
+    transition: 0.6s ease all;
+    margin-top: 20px;
+}
+
+.adicionar__texto{
+    color: #000;
+    font-size: 20px;
+    font-family: 'lobster two';
+    margin-top: 20px;
+}
+
+.adicionar__imagen{
+
+    width: 125px;
+    height: 22px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.cerrar__ventana{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(221, 13, 13);
+    width: 90px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 0 6px 0 rgba(65, 179, 19, 1);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    color: #fff;
+    font-family: 'lobster two';
+    text-decoration: none;
+
+}
+
+
+.cerrar__ventana:hover{
+    background-color: rgba(65, 179, 19, 1);
+    transition: 0.6s;
+}
+/*MODIFICACIONES PARA CELULAR*/
+@media (max-width:768px){
+    .body{
+        padding-top: 70px;
+    }
+    /*color y tamaño de la barra de navegacion*/
+    .header{
+        height: 90px;
+    }
+    .logo{
+        display: flex;
+    }
+    .logo{
+    height: 60px;
+
+    }
+    
+    .nav-menu{
+        flex-direction: column;
+        align-items: center;
+        margin-right:0;
+        background-color: #8EC5FC;
+        background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+        position: fixed;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        padding:20px 0;
+        height: calc(100%-60px);
+        overflow-y:auto ;
+        left:100%;
+        transition: 0.3s;
+    }
+    
+    .nav-menu-item{
+
+        line-height: 70px;
+    }
+    .nav-menu-link{
+
+    padding: 15px 7px;
+    border-radius: 3px;
+    }
+    
+    
+    .nav-menu-link:hover{
+        background-color:orangered ;
+        opacity: 0.6;
+        transition: 1s;
+    }
+    
+    .nav-login-link{
+        padding: 10px 2px;
+        border-radius: 3px;
+        text-size-adjust: 10px;
+        text-transform: capitalize;
+        }
+
+    .nav-login-link:hover{
+        background-color: #086056;
+        opacity: 0.4;
+        transition: 1s;
+    }
+
+    .nav-toggle{
+        display: block;
+    }
+    .nav-menu_visible{
+        left:10px;
+        top: 15px;
+    }
+}
+

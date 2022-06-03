@@ -1,0 +1,204 @@
+
+    :root{
+        --colorTextos:#FC00FF;
+    }
+    *,
+    ::before,
+    ::after{
+        margin: 0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: #00DBDE;
+        background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+        font-family: 'lobster two', cursive;
+        text-transform: capitalize;
+        display: flex;
+        height:900px;
+        justify-content: center;
+        align-items: center;
+    }
+
+        /*formulario*/
+    form{
+            position: static;
+            width: 600px;
+            height: 650px;
+            margin: 150 auto;
+            background-color: #f7f8f6;
+            border: 3px solid transparent ;
+            border-radius: 20px 0;
+            box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
+
+    }
+    h1{
+                color: #000;
+                text-align: center;
+                font-weight: 700;
+                font-size: 30px;
+    }
+    h2{
+        color: #000;
+        text-align: center;
+        font-size: 20px;
+    }
+
+
+    form .usuario{
+
+        margin: 55px;
+        height: 1000px;
+    }
+
+    /*inputs*/
+    input{
+        margin-top: 7px;
+        color: #000000;
+        height: 35px;
+        padding: 10 10 10 5px;
+        font-size: 18px;
+        display: block;
+        width: 100%;
+        border: none;
+        border-bottom: 2px solid var(--colorTextos);
+        transition: 0.6s ease all;
+
+    }
+    ::placeholder{
+        color: #000;
+        font-family: 'lobster two', cursive;
+        opacity: 0.3;
+        font-size: 15px;
+    }
+
+
+    input:focus{
+        border: 3px solid #FC00FF;
+        outline: none;
+        box-shadow: 3px 0px 30px  ;
+        color: rgba(94, 93, 93, 0.6s);
+        color:var(--colorTextos);
+    }
+    label{
+        color: var(--colorTextos);
+
+    }
+
+    input[type="date"]{
+        background-color: #00DBDE;
+        background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+        padding: 15px;
+        width: 300px;
+        border-radius: 15px;
+        font-family: 'lobster two',cursive;
+        color: #fff;
+        border:none;
+
+    }
+
+    ::-webkit-calendar-picker-indicator{
+        background-color: white;
+        padding: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    /*input texto de error */
+    .formulario__grupo-input-error{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 12px;
+        margin-bottom: 0;
+        display: none;
+        
+    }
+
+
+
+    .formulario__grupo-input-error-activo{
+        display: block;
+    }
+
+/*validaciones*/
+
+    .formulario__validacion-estado{
+        position:absolute;
+        right: 550px;
+
+        font-size: 25px;
+        opacity: 0;
+
+    }
+    
+     .formulario__grupo-correcto .formulario__validacion-estado{
+        color: #3ca70b;
+        opacity: 1;
+    }
+
+    .formulario__grupo-incorrecto .formulario__validacion-estado{
+        color: #ff0000;
+        opacity: 1;
+
+    }
+
+/*boton*/
+
+
+    button{
+        font-family: 'lobster two', cursive;
+        background-color: #3ca70b;
+        border: none;
+        display:inline-flex;
+        width: 150px;
+        height: 40px;
+        font-size: 25px;
+        margin-top: 50px;
+        margin-left: 300px;
+        justify-content: center;
+        color: #fff;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+
+
+    button:hover{
+
+        background-color: #f00303;
+        opacity: 0.5;
+        transition: 0.6s;
+    }
+/*inicia sesion*/
+
+.formulario__inicia{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 90px;
+    margin-right: 90px;
+    text-align: center;
+
+}
+
+/*mensaje de exito*/
+
+.formulario__mensaje-exito{
+    margin-top: 20px;
+    margin-left: 90px;
+    margin-right: 90px;
+    text-align: center;
+    background-color: #3ca70b;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:20px;
+    display: none;
+}
+
+.formulario__mensaje-exito-activo{
+    display: block;
+
+}
+
+    @media screen and(max-width:768px) {
+        .form{
+            width: 60%;
+            height: 60%;
+        }
+    }
